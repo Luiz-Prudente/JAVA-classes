@@ -1,9 +1,11 @@
+import screen.match.modelo.Movie;
+
 public class Principal {
     public static void main(String[] args) {
         Movie myMovie = new Movie();
-        myMovie.name = "Pantera Negra";
-        myMovie.releaseYear = 2018;
-        myMovie.durationInMinutes = 114;
+        myMovie.setName("Pantera Negra");
+        myMovie.setReleaseYear(2018);
+        myMovie.setDurationInMinutes(114);
 
 
         myMovie.assess(8);
