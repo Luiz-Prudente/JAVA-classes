@@ -44,7 +44,7 @@ public class Principal {
 
         // Uso do classe TimeCal
         TimeCalc calculator = new TimeCalc();
-        calculator.include(blackPanther);
+        calculator.include(fastAndFurious);
         calculator.include(fastAndFurious);
         calculator.include(mySerie);
         System.out.println(calculator.getTotalTime());
