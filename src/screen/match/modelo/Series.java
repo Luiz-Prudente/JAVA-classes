@@ -1,6 +1,8 @@
 package screen.match.modelo;
 
-public class Series extends Titulo{
+import screen.match.calc.Classification;
+
+public class Series extends Titulo implements Classification {
     private int seasons;
     private int episodesPerSeason;
     private boolean active;
@@ -50,5 +52,10 @@ public class Series extends Titulo{
         System.out.println("Avaliação: " + getRate());
         System.out.println("Total de avaliações: " + getTotalAvaliations());
         System.out.println("Temporadas: " + seasons);
+    }
+
+    @Override
+    public int getRate() {
+        return 0;
     }
 }

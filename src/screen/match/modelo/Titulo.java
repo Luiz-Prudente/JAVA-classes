@@ -41,10 +41,6 @@ public class Titulo {
         this.avaliationsSum = avaliationsSum;
     }
 
-
-    public double getRate() {
-        return rate;
-    }
     public void setRate(double rate) {
         this.rate = rate;
     }
@@ -78,7 +74,7 @@ public class Titulo {
         totalAvaliations++;
     }
 
-    public void averageAssess(){
-        rate = avaliationsSum / totalAvaliations;
+    public double averageAssess(){
+        return rate = avaliationsSum / totalAvaliations;
     }
 }

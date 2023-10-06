@@ -1,3 +1,4 @@
+import screen.match.calc.RecomendationFilter;
 import screen.match.calc.TimeCalc;
 import screen.match.modelo.Movie;
 import screen.match.modelo.Series;
@@ -29,8 +30,10 @@ public class Principal {
         mySerie.setSeasons(4);
         mySerie.setEpisodesPerSeason(8);
         mySerie.setMinPerEpisode(48);
+        mySerie.setTotalAvaliations(150);
 
         mySerie.assess(10);
+
         mySerie.assess(9);
         mySerie.assess(7);
         mySerie.assess(6);
@@ -45,5 +48,10 @@ public class Principal {
         calculator.include(fastAndFurious);
         calculator.include(mySerie);
         System.out.println(calculator.getTotalTime());
+
+        //USando o filtro de classificação
+        RecomendationFilter filtered = new RecomendationFilter();
+        filtered.filter(blackPanther);
+        filtered.filter(mySerie);
     }
 }
