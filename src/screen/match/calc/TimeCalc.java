@@ -1,15 +1,17 @@
 package screen.match.calc;
 
-import screen.match.modelo.Movie;
+import screen.match.modelo.Titulo;
 
 public class TimeCalc {
-    private int totalTime;
+    private int totalTime = 0;
 
     public int getTotalTime() {
         return totalTime;
     }
 
-    public void include(Movie f){
-        totalTime += f.getDurationInMinutes();
+    public void include(Titulo titulo){
+        totalTime += titulo.getDurationInMinutes();
     }
+
+
 }
