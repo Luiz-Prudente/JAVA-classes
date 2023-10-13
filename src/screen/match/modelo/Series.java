@@ -62,4 +62,9 @@ public class Series extends Titulo implements Classification {
     public int getRate() {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "Série: " + this.getName() + " (" + this.getReleaseYear() + ")";
+    }
 }

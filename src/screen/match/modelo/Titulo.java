@@ -1,6 +1,6 @@
 package screen.match.modelo;
 
-public class Titulo {
+public class Titulo implements  Comparable<Titulo> {
     private String name;
     private int releaseYear;
     private boolean includeInPlan;
@@ -81,5 +81,11 @@ public class Titulo {
 
     public double averageAssess(){
         return rate = avaliationsSum / totalAvaliations;
+    }
+
+    @Override
+    public int compareTo(Titulo otherTitle) {
+        return this.getName().compareTo(otherTitle.getName());
+
     }
 }
