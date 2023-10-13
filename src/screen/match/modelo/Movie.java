@@ -17,4 +17,10 @@ public class Movie extends Titulo implements Classification {
     public int getRate() {
         return (int) averageAssess() / 2;
     }
+
+    //Metodo toString Reescrito para mostrar não o endereço de momória, e sim as informações desejadas
+    @Override
+    public String toString() {
+        return "Filme: " + this.getName() + " (" + this.getReleaseYear() + ")";
+    }
 }

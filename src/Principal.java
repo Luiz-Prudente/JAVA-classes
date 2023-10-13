@@ -3,6 +3,8 @@ import screen.match.calc.TimeCalc;
 import screen.match.modelo.Movie;
 import screen.match.modelo.Series;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         //Filme
@@ -15,6 +17,11 @@ public class Principal {
         fastAndFurious.setName("Velozes e Furiosos");
         fastAndFurious.setReleaseYear(2023);
         fastAndFurious.setDurationInMinutes(129);
+
+        Movie toyStory = new Movie();
+        toyStory.setName("Toy Story");
+        toyStory.setReleaseYear(2003);
+        toyStory.setDurationInMinutes(94);
 
         blackPanther.assess(8);
         blackPanther.assess(9.5);
@@ -49,9 +56,22 @@ public class Principal {
         calculator.include(mySerie);
         System.out.println(calculator.getTotalTime());
 
-        //USando o filtro de classificação
+        //Usando o filtro de classificação
         RecomendationFilter filtered = new RecomendationFilter();
         filtered.filter(blackPanther);
         filtered.filter(mySerie);
+
+        //Incluindo o uso de Arrays
+        ArrayList<Movie> movies = new ArrayList<>();
+        movies.add(blackPanther);
+        movies.add(fastAndFurious);
+        movies.add(toyStory);
+
+        System.out.println(movies);
+        /*int size = movies.size();
+        for (int i = 0; i < size; i++){
+            System.out.println(movies.get(i).getName());
+        }*/
+
     }
 }
