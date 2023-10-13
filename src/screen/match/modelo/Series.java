@@ -8,6 +8,10 @@ public class Series extends Titulo implements Classification {
     private boolean active;
     private int minPerEpisode;
 
+    public Series(String name, int releaseYear, int durationInMinutes) {
+        super(name, releaseYear, durationInMinutes);
+    }
+
 
     public int getSeasons() {
         return seasons;

@@ -8,20 +8,20 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
         //Filme
-        Movie blackPanther = new Movie();
-        blackPanther.setName("Pantera Negra");
-        blackPanther.setReleaseYear(2018);
-        blackPanther.setDurationInMinutes(114);
+        Movie blackPanther = new Movie("Pantera Negra",2018,114);
+        //blackPanther.setName("Pantera Negra");
+        //blackPanther.setReleaseYear(2018);
+        //blackPanther.setDurationInMinutes(114);
 
-        Movie fastAndFurious = new Movie();
-        fastAndFurious.setName("Velozes e Furiosos");
-        fastAndFurious.setReleaseYear(2023);
-        fastAndFurious.setDurationInMinutes(129);
+        Movie fastAndFurious = new Movie("Velozes e Furiosos",2023,129);
+        //fastAndFurious.setName("Velozes e Furiosos");
+        //fastAndFurious.setReleaseYear(2023);
+        //fastAndFurious.setDurationInMinutes(129);
 
-        Movie toyStory = new Movie();
-        toyStory.setName("Toy Story");
-        toyStory.setReleaseYear(2003);
-        toyStory.setDurationInMinutes(94);
+        Movie toyStory = new Movie("Toy Story",2003,94);
+        //toyStory.setName("Toy Story");
+        //toyStory.setReleaseYear(2003);
+        //toyStory.setDurationInMinutes(94);
 
         blackPanther.assess(8);
         blackPanther.assess(9.5);
@@ -31,12 +31,12 @@ public class Principal {
         blackPanther.showDataSheet();
 
         //Série
-        Series mySerie = new Series();
-        mySerie.setName("The Boys");
-        mySerie.setReleaseYear(2021);
+        Series mySerie = new Series("The Boys",2021,48);
+        //mySerie.setName("The Boys");
+        //mySerie.setReleaseYear(2021);
         mySerie.setSeasons(4);
         mySerie.setEpisodesPerSeason(8);
-        mySerie.setMinPerEpisode(48);
+        //mySerie.setMinPerEpisode(48);
         mySerie.setTotalAvaliations(150);
 
         mySerie.assess(10);

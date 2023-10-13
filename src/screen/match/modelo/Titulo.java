@@ -9,6 +9,11 @@ public class Titulo {
     private int totalAvaliations = 0;
     private int durationInMinutes;
 
+    public Titulo(String name, int releaseYear, int durationInMinutes) {
+        this.name = name;
+        this.releaseYear = releaseYear;
+        this.durationInMinutes = durationInMinutes;
+    }
 
     //Getters e Setters
     public String getName() {

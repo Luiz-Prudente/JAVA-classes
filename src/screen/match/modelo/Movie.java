@@ -5,6 +5,10 @@ import screen.match.calc.Classification;
 public class Movie extends Titulo implements Classification {
     private String director;
 
+    public Movie(String name, int releaseYear, int durationInMinutes) {
+        super(name, releaseYear, durationInMinutes);
+    }
+
     public String getDirector() {
         return director;
     }
